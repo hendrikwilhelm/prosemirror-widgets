@@ -1,8 +1,10 @@
 module.exports = {
-    entry: './src/widgets/index.js',
+    entry: __dirname + '/src/widgets/index.js',
     output: {
-        path: __dirname + "/dist",
-        filename: 'bundle.js'
+        path: __dirname + '/dist',
+        filename: 'bundle.js',
+        library: 'libraryname',
+        libraryTarget: 'umd'
     },
     module: {
         loaders: [
