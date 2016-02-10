@@ -5,8 +5,8 @@ import {defParser, defParamsClick, selectedNodeAttr} from "../../utils"
 require('mathjax');
 require('mathjax/extensions/MathMenu');
 require('mathjax/extensions/MathZoom');
-require('mathjax/jax/output/HTML-CSS/jax');
 require('mathjax/jax/output/HTML-CSS/fonts/STIX/fontdata');
+require('mathjax/jax/output/HTML-CSS/jax');
 require('mathjax/config/TeX-AMS-MML_HTMLorMML');
 
 export class BlockMath extends Block {
