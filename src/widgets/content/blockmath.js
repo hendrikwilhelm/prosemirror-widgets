@@ -1,7 +1,8 @@
 import {Block, Attribute} from "prosemirror/dist/model"
 import {elt,insertCSS} from "prosemirror/dist/dom"
 import {defParser, defParamsClick, selectedNodeAttr} from "../../utils"
-import 'mathjax';
+
+require('mathjax');
 
 export class BlockMath extends Block {
 	get attrs() {
