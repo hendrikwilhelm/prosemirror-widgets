@@ -2,6 +2,9 @@
   "name": "prosemirror-widgets",
   "version": "0.0.1",
   "main": "dist/bundle.js",
+  "dependencies": {
+    "mathjax": "^2.6.1"
+  },
   "devDependencies": {
     "babel-core": "^6.5.1",
     "babel-loader": "^6.2.2",
