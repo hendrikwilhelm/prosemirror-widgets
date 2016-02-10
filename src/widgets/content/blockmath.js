@@ -3,6 +3,8 @@ import {elt,insertCSS} from "prosemirror/dist/dom"
 import {defParser, defParamsClick, selectedNodeAttr} from "../../utils"
 
 require('mathjax');
+require('mathjax/extensions/MathMenu');
+require('mathjax/extensions/MathZoom');
 
 export class BlockMath extends Block {
 	get attrs() {

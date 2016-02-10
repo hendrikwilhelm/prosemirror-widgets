@@ -2,6 +2,10 @@ import {Inline, Attribute} from "prosemirror/dist/model"
 import {elt, insertCSS} from "prosemirror/dist/dom"
 import {defParser, defParamsClick, selectedNodeAttr} from "../../utils"
 
+require('mathjax');
+require('mathjax/extensions/MathMenu');
+require('mathjax/extensions/MathZoom');
+
 export class InlineMath extends Inline {
 	get attrs() {
 		return {
@@ -27,7 +31,7 @@ InlineMath.prototype.serializeDOM = node => {
 InlineMath.register("command", "insert", {
 	derive: {
 		params: [
-	      	{ name: "Latex", attr: "tex", label: "Latex Expression", type: "text", 
+	      	{ name: "Latex", attr: "tex", label: "Latex Expression", type: "text",
 	          prefill: function(pm) { return selectedNodeAttr(pm, this, "tex") }}
 	    ]
 	},
